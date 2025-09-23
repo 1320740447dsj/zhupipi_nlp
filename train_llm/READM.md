@@ -39,4 +39,4 @@ hidden_size=512,
 
 模型大小为0.03B；
 
-模型权重将上传到huggingface地址：
+模型权重将上传到huggingface地址：https://huggingface.co/zhupipi/litelm
