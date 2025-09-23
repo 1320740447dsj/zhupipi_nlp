@@ -13,31 +13,33 @@ step2:进行pretrain预训练
 
 step3:进行监督微调
 
-step4:进行强化学习
-
 
 
 test_llm.ipynb进行测试文件
 
 
 
-模型是采用了旋转位置编码、分组查询注意力、FlashAttention等。具体参数如下：
+模型是采用了旋转位置编码、分组查询注意力、FlashAttention、专家模型等。具体参数如下：
 
 ```python
 hidden_size=512,
- num_attention_heads=16,
- num_key_value_heads=8,
- flash_attn=True,
- attention_bias=False,
- max_seq_len=512,
- intermediate_size=2048,
- mlp_bias=False,
- vocab_size=6400,
- n_layers=8,
- dropout=0.0,
+num_attention_heads=16,
+num_key_value_heads=8,
+flash_attn=True,
+attention_bias=False,
+max_seq_len=512,
+intermediate_size=2048,
+mlp_bias=False,
+vocab_size=6400,
+n_layers=8,
+dropout=0.0,
+expert_num=4,
+topk=2,
+output_router_logits=True,
+aux_loss_coef=0.01,
 ```
 
-模型大小为0.03B；
+模型大小为0.14 B；
 
 模型权重将上传到huggingface地址：https://huggingface.co/zhupipi/litelm
 
