@@ -41,7 +41,7 @@ aux_loss_coef=0.01,
 
 模型大小为0.14 B；
 
-模型权重将上传到huggingface地址：https://huggingface.co/zhupipi/litelm
+模型权重将上传到huggingface地址：https://huggingface.co/zhupipi/litelm_moe
 
 
 
